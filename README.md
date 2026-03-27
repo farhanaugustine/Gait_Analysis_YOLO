@@ -1,7 +1,7 @@
 # Gait Analysis with Ultralytics YOLO Pose
 Configurable Python project for analyzing gait in animal video experiments from Ultralytics pose-label TXT files.
 
-This repo is extension of DeepLabCut-based ([Gait Analysis](https://github.com/farhanaugustine/Gait_Analysis_DeepLabCut)), but for YOLO-pose model usage. It has been switched over now to use YOLO-focused pose structure and is compatable with IntegraPose use. It ingests per-frame Ultralytics pose labels, converts them into a canonical dataframe, and then runs gait, pose, ROI, and Kuramoto-style limb coordination analysis on top of that data.
+This repository is a YOLO-pose gait-analysis pipeline built around Ultralytics/IntegraPose-style pose outputs. It ingests per-frame Ultralytics pose-label `.txt` files, converts them into a canonical dataframe, and then runs gait, pose, ROI, and Kuramoto-style limb coordination analysis on top of that data.
 
 ## Features
 
@@ -33,6 +33,8 @@ The pipeline expects:
 - a folder of per-frame Ultralytics pose `.txt` labels at `INPUT_LABELS_DIR`
 
 The labels should come from an Ultralytics pose run with `save_txt=True`. The loader supports the standard normalized pose format with optional trailing detection confidence and track ID.
+
+DeepLabCut CSV/HDF5 exports are not an input format for this pipeline; use YOLO pose TXT labels instead.
 
 ## Quick Start
 
@@ -66,7 +68,7 @@ On later runs, use the same command and the saved profile will be loaded automat
 Edit [config.py](/C:/Users/Aegis-MSI/Documents/GitHub/Gait_Analysis_YOLO%20-%20Copy/config.py) if you want to change defaults such as colors, Kuramoto parameters, or dashboard layout:
 
 - `INPUT_VIDEO_PATH`
-- `INPUT_LABELS_DIR`
+- `INPUT_LABELS_DIR` pointing to your Ultralytics/YOLO pose label directory
 
 ### 3. Direct config editing is still supported
 If you prefer not to use the interactive wizard, you can still set `KEYPOINT_INDEX_MAP` directly in `config.py`. Example:
