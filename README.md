@@ -22,7 +22,7 @@ This repository is a YOLO-pose gait-analysis pipeline built around Ultralytics/I
 
 2. Install dependencies:
    ```bash
-   pip install pandas numpy opencv-python tqdm scipy
+   pip install pandas numpy opencv-python tqdm scipy ultralytics
    ```
 
 ## Expected Input
