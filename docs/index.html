@@ -902,6 +902,27 @@
       50% { filter: drop-shadow(0 0 10px rgba(143,88,217,.22)); }
     }
 
+
+
+    .site-footer {
+      margin-top: 18px;
+      padding: 18px 20px 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .site-footer a {
+      color: var(--toxin);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 1420px) {
       .controls, .grid, .stepper { grid-template-columns: 1fr 1fr; }
       .brain-tag { max-width: 200px; }
@@ -1285,7 +1306,24 @@
         <a class="cite-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3866129/" target="_blank" rel="noopener noreferrer">Motor-task fMRI study with nicotine</a>
       </article>
     </section>
+
+
+    <footer class="site-footer">
+      <div>© 2026 Farhan Augustine. All rights reserved.</div>
+      <div>This interactive research visualization and its design/content are reserved.</div>
+    </footer>
+
   </div>
+
+<footer class="site-footer">
+  <div><strong>For illustration purposes only.</strong></div>
+  <div>
+    The scientific content presented here is derived from the cited references.
+    This material is a simplified visual interpretation and should not be used
+    as an accurate representation of neural circuits or as educational,
+    clinical, or scientific reference material.
+  </div>
+</footer>
 
   <script>
     const state = {
