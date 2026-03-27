@@ -310,5 +310,7 @@ If `roi_config.json` does not exist, the script will prompt you to draw ROIs on 
 This project builds on general stride-level pose-analysis ideas inspired by:
 
 - Keith Sheppard et al., *Stride-level analysis of mouse open field behavior using deep-learning-based pose estimation*, Cell Reports (2021)
+- Another DeepLabCut-based Gait Analysis [Repo](https://github.com/farhanaugustine/Gait_Analysis_DeepLabCut)
+- Inspiration APS March Meeting Animal Behavior & Social Interaction Talks 2025-2026
 
 It also relies on Ultralytics pose outputs, OpenCV, pandas, NumPy, and SciPy.
