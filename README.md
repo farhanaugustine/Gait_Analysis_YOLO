@@ -1,7 +1,7 @@
 # Gait Analysis with Ultralytics YOLO Pose
 Configurable Python project for analyzing gait in animal video experiments from Ultralytics pose-label TXT files.
 
-This repo is extension of DeepLabCut-based Gait analysis, but has been switched over now to use YOLO-focused pose structure. It ingests per-frame Ultralytics pose labels, converts them into a canonical dataframe, and then runs gait, pose, ROI, and Kuramoto-style limb coordination analysis on top of that data.
+This repo is extension of DeepLabCut-based ([Gait Analysis](https://github.com/farhanaugustine/Gait_Analysis_DeepLabCut)), but for YOLO-pose model usage. It has been switched over now to use YOLO-focused pose structure and is compatable with IntegraPose use. It ingests per-frame Ultralytics pose labels, converts them into a canonical dataframe, and then runs gait, pose, ROI, and Kuramoto-style limb coordination analysis on top of that data.
 
 ## Features
 
@@ -16,8 +16,8 @@ This repo is extension of DeepLabCut-based Gait analysis, but has been switched 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/farhanaugustine/Gait_Analysis_DeepLabCut.git
-   cd Gait_Analysis_DeepLabCut
+   git clone https://github.com/farhanaugustine/Gait_Analysis_YOLO.git
+   cd Gait_Analysis_YOLO
    ```
 
 2. Install dependencies:
@@ -63,7 +63,7 @@ On later runs, use the same command and the saved profile will be loaded automat
 
 ### 2. Optional: edit defaults in `config.py`
 
-Edit [config.py](/C:/Users/Aegis-MSI/Documents/GitHub/Gait_Analysis_DeepLabCut%20-%20Copy/config.py) if you want to change defaults such as colors, Kuramoto parameters, or dashboard layout:
+Edit [config.py](/C:/Users/Aegis-MSI/Documents/GitHub/Gait_Analysis_YOLO%20-%20Copy/config.py) if you want to change defaults such as colors, Kuramoto parameters, or dashboard layout:
 
 - `INPUT_VIDEO_PATH`
 - `INPUT_LABELS_DIR`
